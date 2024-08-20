@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temperature Converter</h1>
+    </header>
+
+    <main>
+        <section class="conversion">
+            <h2>Convert Temperature</h2>
+            <div class="converter">
+                <input type="number" id="temp-input" placeholder="Enter temperature">
+                <select id="unit-input">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Rankine">Rankine</option>
+                </select>
+                <div class="results">
+                    <p id="result-celsius">Celsius: <span>0</span> °C</p>
+                    <p id="result-fahrenheit">Fahrenheit: <span>0</span> °F</p>
+                    <p id="result-kelvin">Kelvin: <span>0</span> K</p>
+                    <p id="result-rankine">Rankine: <span>0</span> °R</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="history">
+            <h2>Conversion History</h2>
+            <canvas id="history-graph"></canvas>
+            <ul id="history-list"></ul>
+        </section>
+    </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
